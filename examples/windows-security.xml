@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Events>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}"/>
+    <EventID>4625</EventID>
+    <Version>0</Version>
+    <Level>0</Level>
+    <Task>12544</Task>
+    <Opcode>0</Opcode>
+    <Keywords>0x8010000000000000</Keywords>
+    <TimeCreated SystemTime="2026-04-03T14:22:01.000000000Z"/>
+    <EventRecordID>1001</EventRecordID>
+    <Correlation/>
+    <Execution ProcessID="652" ThreadID="700"/>
+    <Channel>Security</Channel>
+    <Computer>WIN-SRV2022</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="SubjectUserSid">S-1-0-0</Data>
+    <Data Name="SubjectUserName">-</Data>
+    <Data Name="SubjectDomainName">-</Data>
+    <Data Name="SubjectLogonId">0x0</Data>
+    <Data Name="TargetUserSid">S-1-0-0</Data>
+    <Data Name="TargetUserName">Administrator</Data>
+    <Data Name="TargetDomainName">WIN-SRV2022</Data>
+    <Data Name="Status">0xC000006D</Data>
+    <Data Name="FailureReason">%%2313</Data>
+    <Data Name="SubStatus">0xC000006A</Data>
+    <Data Name="LogonType">3</Data>
+    <Data Name="LogonProcessName">NtLmSsp </Data>
+    <Data Name="AuthenticationPackageName">NTLM</Data>
+    <Data Name="WorkstationName">-</Data>
+    <Data Name="TransmittedServices">-</Data>
+    <Data Name="LmPackageName">-</Data>
+    <Data Name="KeyLength">0</Data>
+    <Data Name="ProcessId">0x0</Data>
+    <Data Name="ProcessName">-</Data>
+    <Data Name="IpAddress">10.0.0.50</Data>
+    <Data Name="IpPort">54321</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}"/>
+    <EventID>4625</EventID>
+    <TimeCreated SystemTime="2026-04-03T14:22:15.000000000Z"/>
+    <EventRecordID>1002</EventRecordID>
+    <Channel>Security</Channel>
+    <Computer>WIN-SRV2022</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">Administrator</Data>
+    <Data Name="LogonType">3</Data>
+    <Data Name="SubStatus">0xC000006A</Data>
+    <Data Name="AuthenticationPackageName">NTLM</Data>
+    <Data Name="IpAddress">10.0.0.50</Data>
+    <Data Name="IpPort">54322</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}"/>
+    <EventID>4625</EventID>
+    <TimeCreated SystemTime="2026-04-03T14:22:30.000000000Z"/>
+    <EventRecordID>1003</EventRecordID>
+    <Channel>Security</Channel>
+    <Computer>WIN-SRV2022</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">Administrator</Data>
+    <Data Name="LogonType">3</Data>
+    <Data Name="SubStatus">0xC000006A</Data>
+    <Data Name="IpAddress">10.0.0.50</Data>
+    <Data Name="IpPort">54323</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}"/>
+    <EventID>4625</EventID>
+    <TimeCreated SystemTime="2026-04-03T14:22:45.000000000Z"/>
+    <EventRecordID>1004</EventRecordID>
+    <Channel>Security</Channel>
+    <Computer>WIN-SRV2022</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">Administrator</Data>
+    <Data Name="LogonType">3</Data>
+    <Data Name="SubStatus">0xC000006A</Data>
+    <Data Name="IpAddress">10.0.0.50</Data>
+    <Data Name="IpPort">54324</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}"/>
+    <EventID>4625</EventID>
+    <TimeCreated SystemTime="2026-04-03T14:23:00.000000000Z"/>
+    <EventRecordID>1005</EventRecordID>
+    <Channel>Security</Channel>
+    <Computer>WIN-SRV2022</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">Administrator</Data>
+    <Data Name="LogonType">3</Data>
+    <Data Name="SubStatus">0xC000006A</Data>
+    <Data Name="IpAddress">10.0.0.50</Data>
+    <Data Name="IpPort">54325</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}"/>
+    <EventID>4625</EventID>
+    <TimeCreated SystemTime="2026-04-03T14:23:15.000000000Z"/>
+    <EventRecordID>1006</EventRecordID>
+    <Channel>Security</Channel>
+    <Computer>WIN-SRV2022</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">sysadmin</Data>
+    <Data Name="LogonType">3</Data>
+    <Data Name="SubStatus">0xC0000064</Data>
+    <Data Name="IpAddress">203.0.113.15</Data>
+    <Data Name="IpPort">60001</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}"/>
+    <EventID>4624</EventID>
+    <TimeCreated SystemTime="2026-04-03T14:30:00.000000000Z"/>
+    <EventRecordID>1010</EventRecordID>
+    <Channel>Security</Channel>
+    <Computer>WIN-SRV2022</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="SubjectUserSid">S-1-5-18</Data>
+    <Data Name="SubjectUserName">SYSTEM</Data>
+    <Data Name="SubjectDomainName">NT AUTHORITY</Data>
+    <Data Name="TargetUserSid">S-1-5-21-1234567890-12345678-123456789-1001</Data>
+    <Data Name="TargetUserName">alice</Data>
+    <Data Name="TargetDomainName">WIN-SRV2022</Data>
+    <Data Name="LogonGuid">{00000000-0000-0000-0000-000000000000}</Data>
+    <Data Name="LogonType">3</Data>
+    <Data Name="AuthenticationPackageName">Kerberos</Data>
+    <Data Name="WorkstationName">-</Data>
+    <Data Name="IpAddress">192.168.1.100</Data>
+    <Data Name="IpPort">49152</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}"/>
+    <EventID>4672</EventID>
+    <TimeCreated SystemTime="2026-04-03T14:30:01.000000000Z"/>
+    <EventRecordID>1011</EventRecordID>
+    <Channel>Security</Channel>
+    <Computer>WIN-SRV2022</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="SubjectUserSid">S-1-5-21-1234567890-12345678-123456789-1001</Data>
+    <Data Name="SubjectUserName">alice</Data>
+    <Data Name="SubjectDomainName">WIN-SRV2022</Data>
+    <Data Name="SubjectLogonId">0x12345678</Data>
+    <Data Name="PrivilegeList">SeDebugPrivilege
+SeBackupPrivilege
+SeRestorePrivilege
+SeTakeOwnershipPrivilege</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}"/>
+    <EventID>4624</EventID>
+    <TimeCreated SystemTime="2026-04-03T14:35:00.000000000Z"/>
+    <EventRecordID>1012</EventRecordID>
+    <Channel>Security</Channel>
+    <Computer>WIN-SRV2022</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">bob</Data>
+    <Data Name="LogonType">2</Data>
+    <Data Name="AuthenticationPackageName">NTLM</Data>
+    <Data Name="IpAddress">192.168.1.50</Data>
+    <Data Name="IpPort">0</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}"/>
+    <EventID>4720</EventID>
+    <TimeCreated SystemTime="2026-04-03T14:45:00.000000000Z"/>
+    <EventRecordID>1020</EventRecordID>
+    <Channel>Security</Channel>
+    <Computer>WIN-SRV2022</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">backdoor_svc</Data>
+    <Data Name="TargetDomainName">WIN-SRV2022</Data>
+    <Data Name="TargetSid">S-1-5-21-1234567890-12345678-123456789-1005</Data>
+    <Data Name="SubjectUserSid">S-1-5-21-1234567890-12345678-123456789-1001</Data>
+    <Data Name="SubjectUserName">alice</Data>
+    <Data Name="SubjectDomainName">WIN-SRV2022</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}"/>
+    <EventID>4732</EventID>
+    <TimeCreated SystemTime="2026-04-03T14:46:00.000000000Z"/>
+    <EventRecordID>1021</EventRecordID>
+    <Channel>Security</Channel>
+    <Computer>WIN-SRV2022</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="MemberSid">S-1-5-21-1234567890-12345678-123456789-1005</Data>
+    <Data Name="MemberName">WIN-SRV2022\backdoor_svc</Data>
+    <Data Name="TargetUserName">Administrators</Data>
+    <Data Name="TargetDomainName">Builtin</Data>
+    <Data Name="TargetSid">S-1-5-32-544</Data>
+    <Data Name="SubjectUserSid">S-1-5-21-1234567890-12345678-123456789-1001</Data>
+    <Data Name="SubjectUserName">alice</Data>
+    <Data Name="SubjectDomainName">WIN-SRV2022</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}"/>
+    <EventID>4625</EventID>
+    <TimeCreated SystemTime="2026-04-03T15:00:00.000000000Z"/>
+    <EventRecordID>1030</EventRecordID>
+    <Channel>Security</Channel>
+    <Computer>WIN-SRV2022</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="TargetUserName">root</Data>
+    <Data Name="LogonType">3</Data>
+    <Data Name="SubStatus">0xC0000064</Data>
+    <Data Name="IpAddress">198.51.100.22</Data>
+    <Data Name="IpPort">12345</Data>
+  </EventData>
+</Event>
+
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}"/>
+    <EventID>4634</EventID>
+    <TimeCreated SystemTime="2026-04-03T15:30:00.000000000Z"/>
+    <EventRecordID>1040</EventRecordID>
+    <Channel>Security</Channel>
+    <Computer>WIN-SRV2022</Computer>
+    <Security/>
+  </System>
+  <EventData>
+    <Data Name="TargetUserSid">S-1-5-21-1234567890-12345678-123456789-1001</Data>
+    <Data Name="TargetUserName">alice</Data>
+    <Data Name="TargetDomainName">WIN-SRV2022</Data>
+    <Data Name="TargetLogonId">0x12345678</Data>
+    <Data Name="LogonType">3</Data>
+  </EventData>
+</Event>
+
+</Events>
