@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="social-preview.png" alt="AUTHLOG" width="640">
+</p>
+
 # authlog
 
 **Authentication log analyzer and triage tool**
@@ -223,3 +227,8 @@ make clean       # Remove build artifacts
 ## License
 
 MIT — Copyright 2026 Red Hound Information Security LLC. See [LICENSE](LICENSE).
+---
+
+> **Built by [Red Hound InfoSec](https://redhound.us)** — Penetration testing, attack surface analysis, and security consulting.
+>
+> [Visit redhound.us](https://redhound.us) | [Read the blog](https://redhound.us/blog.html) | [Book a consultation](https://redhound.us/#contact)
