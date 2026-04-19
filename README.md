@@ -10,6 +10,13 @@
 
 ---
 
+## Authorized Use
+
+This tool is intended for defensive security, incident response, and authorized administrative auditing.
+Only analyze systems and logs that you own or have explicit permission to assess.
+
+---
+
 ## Who it is for
 
 - **Incident responders** triaging compromised systems
