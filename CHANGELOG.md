@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- CLI: create parent directories automatically when using `-o/--output` with nested paths.
+
+### Documentation
+
+- README: added an Authorized Use section.
+
 ## [0.1.0] — 2026-04-03
 
 ### Added

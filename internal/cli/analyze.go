@@ -131,6 +131,11 @@ func runAnalyze(args []string) int {
 	// Determine output writer
 	w := os.Stdout
 	if outPath != "" {
+		// Ensure parent directories exist for nested output paths.
+		if err := os.MkdirAll(filepath.Dir(outPath), 0o755); err != nil {
+			fmt.Fprintf(os.Stderr, "error creating output directory: %v\n", err)
+			return 2
+		}
 		f, err := os.Create(outPath)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "error creating output file: %v\n", err)
