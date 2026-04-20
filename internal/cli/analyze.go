@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"sort"
 	"strings"
 	"time"
 
@@ -114,6 +115,7 @@ func runAnalyze(args []string) int {
 	for k := range formatsSeen {
 		fmtList = append(fmtList, k)
 	}
+	sort.Strings(fmtList)
 
 	// Build analysis config
 	cfg := analyzer.Config{
@@ -132,7 +134,14 @@ func runAnalyze(args []string) int {
 	w := os.Stdout
 	if outPath != "" {
 		// Ensure parent directories exist for nested output paths.
-		if err := os.MkdirAll(filepath.Dir(outPath), 0o755); err != nil {
+		//
+		// filepath.Dir("report.txt") returns ".". Creating "." is safe, but we also
+		// guard against edge cases where Dir might return an empty string.
+		outDir := filepath.Dir(outPath)
+		if outDir == "" {
+			outDir = "."
+		}
+		if err := os.MkdirAll(outDir, 0o755); err != nil {
 			fmt.Fprintf(os.Stderr, "error creating output directory: %v\n", err)
 			return 2
 		}
