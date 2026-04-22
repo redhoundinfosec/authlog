@@ -150,7 +150,11 @@ func runAnalyze(args []string) int {
 			fmt.Fprintf(os.Stderr, "error creating output file: %v\n", err)
 			return 2
 		}
-		defer f.Close()
+		defer func() {
+			if err := f.Close(); err != nil {
+				fmt.Fprintf(os.Stderr, "warning: failed to close output file: %v\n", err)
+			}
+		}()
 		w = f
 	}
 
