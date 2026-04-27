@@ -103,8 +103,14 @@ func AutoParse(data []byte) ([]*AuthEvent, LogFormat, error) {
 	format := DetectFormat(data)
 	p := NewParser(format)
 	if p == nil {
-		return nil, format, nil
+		return []*AuthEvent{}, format, nil
 	}
 	events, err := p.Parse(data)
-	return events, format, err
+	if err != nil {
+		return []*AuthEvent{}, format, err
+	}
+	if events == nil {
+		return []*AuthEvent{}, format, nil
+	}
+	return events, format, nil
 }

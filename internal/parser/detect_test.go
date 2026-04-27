@@ -99,3 +99,35 @@ Apr  3 14:23:00 server sshd[2]: Failed password for bob from 5.6.7.8 port 22 ssh
 		t.Errorf("expected 2 events, got %d", len(events))
 	}
 }
+
+func TestAutoParse_UnknownFormatReturnsEmptySlice(t *testing.T) {
+	events, fmt_, err := AutoParse([]byte("this is not a log format we recognize"))
+	if err != nil {
+		t.Fatalf("expected nil err, got %v", err)
+	}
+	if fmt_ != FormatUnknown {
+		t.Fatalf("expected FormatUnknown, got %q", fmt_)
+	}
+	if events == nil {
+		t.Fatalf("expected non-nil events slice")
+	}
+	if len(events) != 0 {
+		t.Fatalf("expected 0 events, got %d", len(events))
+	}
+}
+
+func TestAutoParse_EmptyInputReturnsEmptySlice(t *testing.T) {
+	events, fmt_, err := AutoParse([]byte(""))
+	if err != nil {
+		t.Fatalf("expected nil err, got %v", err)
+	}
+	if fmt_ != FormatUnknown {
+		t.Fatalf("expected FormatUnknown for empty input, got %q", fmt_)
+	}
+	if events == nil {
+		t.Fatalf("expected non-nil events slice")
+	}
+	if len(events) != 0 {
+		t.Fatalf("expected 0 events, got %d", len(events))
+	}
+}

@@ -106,6 +106,10 @@ func runAnalyze(args []string) int {
 			continue
 		}
 
+		if len(events) == 0 {
+			fmt.Fprintf(os.Stderr, "warning: no events parsed from %s\n", fpath)
+		}
+
 		allEvents = append(allEvents, events...)
 		sources = append(sources, filepath.Base(fpath))
 		formatsSeen[string(fmt_)] = true
